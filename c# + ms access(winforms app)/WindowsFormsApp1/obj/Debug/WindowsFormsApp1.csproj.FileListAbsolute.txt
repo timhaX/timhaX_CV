@@ -1,0 +1,74 @@
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\bin\Debug\test.mdb
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\rh\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\bin\Debug\test.mdb
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\курс\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddForm.resources
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\bin\Debug\test.mdb
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\123\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SearchForm.resources
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\bin\Debug\test.mdb
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddForm.resources
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SearchForm.resources
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\bin\Debug\test.mdb
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddForm.resources
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SearchForm.resources
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\timaa\Desktop\прога\Основная Курсовая\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Games\git\c#\WindowsFormsApp1\bin\Debug\test.mdb
+C:\Games\git\c#\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Games\git\c#\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Games\git\c#\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddForm.resources
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SearchForm.resources
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Games\git\c#\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

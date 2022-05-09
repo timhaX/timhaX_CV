@@ -1,0 +1,102 @@
+create table History2
+(
+Id int identity primary key,
+GroupID INT ,
+Operetion nvarchar(200),
+CreateAt DATETIME  DEFAULT GETDATE(),
+);
+
+GO
+CREATE TRIGGER Group1_INSERT
+ON Group1
+AFTER INSERT 
+AS
+INSERT INTO History2 (GroupID, Operetion)
+SELECT  GroupID, ' Headman ' + Headman + ' StudiesForm ' + StudiesForm
+
+FROM INSERTED 
+-----------------------
+Go 
+Create procedure AddLecturer
+@AddFIO Nvarchar(40), 
+@AddPosition Nvarchar(40), 
+@AddAcademicRank nvarchar(20), 
+@AddWage int
+AS
+INSERT INTO Lecturer(FIO, Position, AcademicRank, Wage)
+VALUES(@AddFIO, @AddPosition, @AddAcademicRank, @AddWage)
+
+DECLARE @AddFIO Nvarchar(40), @AddPosition Nvarchar(40), @AddAcademicRank Nvarchar(40);
+DECLare @AddWage int
+SET @AddFIO = 'yjty'
+SET @AddPosition = 'tyd'
+SET @AddAcademicRank = 'tdyj'
+SET @AddWage = 1000
+EXEC AddLecturer @AddFIO, @AddPosition, @AddAcademicRank, @AddWage
+SELECT * FROM Lecturer
+------
+
+
+---------непонятная ошибка синтаксиса--------
+GO
+Create procedure GetAvgProcedureWage
+@minWage OUTPUT
+@maxWage OUTPUT
+AS
+SELECT @minWage = MIN(Wage), @maxWage = MAX(Wage)
+FROM Lecturer
+
+DECLARE @AvgWage MONEY, @maxWage MONEY
+EXEC GetAvgProcedureWage @minWage OUTPUT, @maxWage OUTPUT
+
+PRINT 'минимальная зарплата' + CONVERT(@minWage)
+PRINT 'максимальная зарплата' + CONVERT(@maxWage)
+
+
+
+---------------------------------------------------
+USE [Хаитов]
+GO
+CREATE PROCEDURE Lecturer1 AS
+BEGIN
+Select FIO AS FIO2, Position, AcademicRank, Wage
+From Lecturer
+END;
+
+USE[Хаитов]
+GO
+
+DECLARE	@return_value int
+
+EXEC	@return_value = [dbo].[Lecturer1]
+
+SELECT	'Return Value' = @return_value
+
+GO
+
+
+
+---------------------------------------------------
+
+USE[Хаитов]
+GO
+Create Trigger Room_Insert_UPDATE
+ON Department
+AFTER INSERT, UPDATE
+AS
+UPDATE Department
+Set Room = Room + 1000
+Where DepartmentID = (SELECT DepartmentID FROM inserted)
+
+USE[Хаитов]
+INSERT INTO Department(DepartmentName, Room, Phone, Head)
+VALUES ('Геометрия','25','+79015768745', 'ХаитовТА')
+
+SELECT * FROM Department
+
+
+
+
+
+
+

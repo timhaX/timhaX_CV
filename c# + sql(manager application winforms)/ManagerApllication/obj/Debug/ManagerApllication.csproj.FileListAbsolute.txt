@@ -1,0 +1,10 @@
+C:\Users\timaa\Desktop\работка\ManagerApllication\bin\Debug\ManagerApllication.exe.config
+C:\Users\timaa\Desktop\работка\ManagerApllication\bin\Debug\ManagerApllication.exe
+C:\Users\timaa\Desktop\работка\ManagerApllication\bin\Debug\ManagerApllication.pdb
+C:\Users\timaa\Desktop\работка\ManagerApllication\obj\Debug\ManagerApllication.csproj.AssemblyReference.cache
+C:\Users\timaa\Desktop\работка\ManagerApllication\obj\Debug\ManagerApllication.Form1.resources
+C:\Users\timaa\Desktop\работка\ManagerApllication\obj\Debug\ManagerApllication.Properties.Resources.resources
+C:\Users\timaa\Desktop\работка\ManagerApllication\obj\Debug\ManagerApllication.csproj.GenerateResource.cache
+C:\Users\timaa\Desktop\работка\ManagerApllication\obj\Debug\ManagerApllication.csproj.CoreCompileInputs.cache
+C:\Users\timaa\Desktop\работка\ManagerApllication\obj\Debug\ManagerApllication.exe
+C:\Users\timaa\Desktop\работка\ManagerApllication\obj\Debug\ManagerApllication.pdb

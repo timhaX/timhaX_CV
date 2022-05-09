@@ -1,0 +1,78 @@
+USE manager;
+CREATE TABLE Orders( 
+id int IDENTITY(1,1) PRIMARY KEY NOT NULL, 
+data_time date DEFAULT GETDATE(), 
+summ int NOT NULL, 
+order_sum int DEFAULT 0
+); 
+CREATE TABLE Prepayment( 
+id int IDENTITY(1,1) PRIMARY KEY NOT NULL, 
+data_time date DEFAULT GETDATE(), 
+summ int NOT NULL, 
+remains int, 
+); 
+CREATE TABLE Payment( 
+order_id int REFERENCES Orders(id) NOT NULL, 
+prepayment_id int REFERENCES Prepayment(id) NOT NULL, 
+payment_sum int NOT NULL 
+); 
+GO
+CREATE TRIGGER ordersupdate
+ON Payment
+AFTER INSERT, UPDATE
+AS
+IF @@ROWCOUNT=0
+
+ RETURN
+IF EXISTS(
+    SELECT
+     *
+    FROM Orders i
+    JOIN inserted e ON i.order_sum >= i.summ 
+    WHERE
+     e.order_id = i.id
+  )
+RETURN 
+IF EXISTS(
+    SELECT
+     *
+    FROM Prepayment d
+    JOIN inserted f ON d.remains <= d.summ-d.summ 
+    WHERE
+     f.prepayment_id = d.id
+  )
+RETURN
+SET NOCOUNT ON
+BEGIN
+UPDATE Orders
+
+SET order_sum = o.order_sum + i.payment_sum
+FROM Orders o JOIN
+(SELECT order_id, SUM(payment_sum)payment_sum FROM inserted GROUP BY order_id) i
+ON o.id=i.order_id
+END
+BEGIN
+UPDATE Prepayment
+
+SET remains = o.remains - i.payment_sum
+FROM Prepayment o JOIN
+(SELECT prepayment_id, SUM(payment_sum)payment_sum FROM inserted GROUP BY prepayment_id) i
+ON  o.id=i.prepayment_id
+END
+GO
+CREATE TRIGGER remainsinsert
+ON Prepayment
+AFTER INSERT
+AS
+IF @@ROWCOUNT=0
+
+ RETURN
+
+SET NOCOUNT ON
+BEGIN
+UPDATE Prepayment
+SET remains=i.summ
+FROM inserted i
+WHERE Prepayment.id=i.id
+END
+GO
