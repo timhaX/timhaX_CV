@@ -1,4 +1,9 @@
 USE manager;
+DROP TABLE IF EXISTS Payment;
+DROP TABLE IF EXISTS Prepayment;
+DROP TABLE IF EXISTS Orders;
+DROP TRIGGER IF EXISTS ordersupdate;
+DROP TRIGGER IF EXISTS remainsinsert;
 CREATE TABLE Orders( 
 id int IDENTITY(1,1) PRIMARY KEY NOT NULL, 
 data_time date DEFAULT GETDATE(), 
@@ -27,20 +32,42 @@ IF @@ROWCOUNT=0
 IF EXISTS(
     SELECT
      *
-    FROM Orders i
-    JOIN inserted e ON i.order_sum >= i.summ 
+    FROM Orders o
+    JOIN inserted i ON o.order_sum >= o.summ 
     WHERE
-     e.order_id = i.id
+     i.order_id = o.id
   )
+  
 RETURN 
 IF EXISTS(
     SELECT
      *
     FROM Prepayment d
-    JOIN inserted f ON d.remains <= d.summ-d.summ 
+    JOIN inserted i ON d.remains <= d.summ-d.summ 
     WHERE
-     f.prepayment_id = d.id
+     i.prepayment_id = d.id
   )
+  
+RETURN
+IF EXISTS(
+    SELECT
+     *
+    FROM Prepayment d
+    JOIN inserted i ON d.remains < i.payment_sum 
+    WHERE
+     i.prepayment_id = d.id
+  )
+  
+RETURN
+IF EXISTS(
+    SELECT
+     *
+    FROM Orders e
+    JOIN inserted i ON e.order_sum > e.summ - i.payment_sum
+    WHERE
+     i.order_id = e.id
+  )
+  
 RETURN
 SET NOCOUNT ON
 BEGIN
