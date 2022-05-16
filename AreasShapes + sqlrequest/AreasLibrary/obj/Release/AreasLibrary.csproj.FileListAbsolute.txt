@@ -1,0 +1,5 @@
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibrary\bin\Release\AreasLibrary.dll
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibrary\bin\Release\AreasLibrary.pdb
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibrary\obj\Release\AreasLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibrary\obj\Release\AreasLibrary.dll
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibrary\obj\Release\AreasLibrary.pdb

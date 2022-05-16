@@ -1,0 +1,8 @@
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibraryTest\bin\Release\AreasLibraryTest.dll
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibraryTest\bin\Release\AreasLibraryTest.pdb
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibraryTest\bin\Release\AreasLibrary.dll
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibraryTest\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibraryTest\bin\Release\AreasLibrary.pdb
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibraryTest\obj\Release\AreasLibraryTest.csprojResolveAssemblyReference.cache
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibraryTest\obj\Release\AreasLibraryTest.dll
+C:\Users\Maya\Documents\Visual Studio 2015\Projects\AreasShapes\AreasLibraryTest\obj\Release\AreasLibraryTest.pdb

@@ -1,0 +1,11 @@
+c:\users\maya\documents\visual studio 2015\Projects\AreasShapes\AreasLibrary\bin\Debug\AreasLibrary.dll
+c:\users\maya\documents\visual studio 2015\Projects\AreasShapes\AreasLibrary\bin\Debug\AreasLibrary.pdb
+c:\users\maya\documents\visual studio 2015\Projects\AreasShapes\AreasLibrary\obj\Debug\AreasLibrary.csprojResolveAssemblyReference.cache
+c:\users\maya\documents\visual studio 2015\Projects\AreasShapes\AreasLibrary\obj\Debug\AreasLibrary.dll
+c:\users\maya\documents\visual studio 2015\Projects\AreasShapes\AreasLibrary\obj\Debug\AreasLibrary.pdb
+C:\Games\mind\AreasShapes\AreasLibrary\bin\Debug\AreasLibrary.dll
+C:\Games\mind\AreasShapes\AreasLibrary\bin\Debug\AreasLibrary.pdb
+C:\Games\mind\AreasShapes\AreasLibrary\obj\Debug\AreasLibrary.csproj.AssemblyReference.cache
+C:\Games\mind\AreasShapes\AreasLibrary\obj\Debug\AreasLibrary.csproj.CoreCompileInputs.cache
+C:\Games\mind\AreasShapes\AreasLibrary\obj\Debug\AreasLibrary.dll
+C:\Games\mind\AreasShapes\AreasLibrary\obj\Debug\AreasLibrary.pdb

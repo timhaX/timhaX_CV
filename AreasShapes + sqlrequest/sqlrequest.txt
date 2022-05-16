@@ -1,0 +1,28 @@
+USE mindbox
+DROP TABLE IF EXISTS categories;
+DROP TABLE IF EXISTS products;
+CREATE TABLE categories (
+ id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+ namee VARCHAR(50) NOT NULL);
+ 
+INSERT INTO categories (namee) VALUES
+    ('Продукты'),
+    ('Хозяйственные товары'),
+    ('Товары для дома');
+ 
+CREATE TABLE products (
+   id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+  namee VARCHAR(50) NOT NULL,
+  category_id int NOT NULL,
+
+);
+ 
+INSERT INTO products (namee, category_id) VALUES
+    ('Молоко', 1),
+    ('Хлеб', 1),
+    ('Шампунь', 2),
+    ('Молоко', 3),
+    ('Хлеб', 3),
+    ('Газировка', 0);
+ 
+SELECT products.namee AS ProductName, categories.namee AS CategoryName FROM products LEFT JOIN categories ON products.category_id = categories.id;
