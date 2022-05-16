@@ -6,9 +6,9 @@ CREATE TABLE categories (
  namee VARCHAR(50) NOT NULL);
  
 INSERT INTO categories (namee) VALUES
-    ('Продукты'),
-    ('Хозяйственные товары'),
-    ('Товары для дома');
+    ('Игра'),
+    ('Фильм'),
+    ('Сериал');
  
 CREATE TABLE products (
    id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
@@ -18,11 +18,11 @@ CREATE TABLE products (
 );
  
 INSERT INTO products (namee, category_id) VALUES
-    ('Молоко', 1),
-    ('Хлеб', 1),
-    ('Шампунь', 2),
-    ('Молоко', 3),
-    ('Хлеб', 3),
-    ('Газировка', 0);
+    ('GTA5', 1),
+    ('CSGO', 1),
+    ('Игра на понижение', 2),
+    ('Бумажный  дом', 3),
+    ('Воронины', 3),
+    ('Конфетка', 0);
  
 SELECT products.namee AS ProductName, categories.namee AS CategoryName FROM products LEFT JOIN categories ON products.category_id = categories.id;
