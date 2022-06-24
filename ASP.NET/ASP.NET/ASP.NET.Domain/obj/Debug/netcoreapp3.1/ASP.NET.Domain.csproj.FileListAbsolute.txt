@@ -1,0 +1,10 @@
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\bin\Debug\netcoreapp3.1\ASP.NET.Domain.deps.json
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\bin\Debug\netcoreapp3.1\ASP.NET.Domain.dll
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\bin\Debug\netcoreapp3.1\ASP.NET.Domain.pdb
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\obj\Debug\netcoreapp3.1\ASP.NET.Domain.csproj.AssemblyReference.cache
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\obj\Debug\netcoreapp3.1\ASP.NET.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\obj\Debug\netcoreapp3.1\ASP.NET.Domain.AssemblyInfoInputs.cache
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\obj\Debug\netcoreapp3.1\ASP.NET.Domain.AssemblyInfo.cs
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\obj\Debug\netcoreapp3.1\ASP.NET.Domain.csproj.CoreCompileInputs.cache
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\obj\Debug\netcoreapp3.1\ASP.NET.Domain.dll
+C:\Users\t.khaitov\Desktop\ASP.NET\ASP.NET\ASP.NET.Domain\obj\Debug\netcoreapp3.1\ASP.NET.Domain.pdb
