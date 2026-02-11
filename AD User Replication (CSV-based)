@@ -1,0 +1,106 @@
+Description
+
+This project provides a PowerShell-based solution for exporting users from one Active Directory domain (mt.modul.tech) and importing them into another domain (lab.modul.tech) using CSV as an intermediate format without passwords.
+
+The solution is designed for scenarios where:
+
+There is no domain trust
+There are no Domain Admin privileges on the source domain
+Only read access is available on the source DC
+Target domain allows user creation within specific OU
+
+This is attribute-level replication, not native AD replication.
+
+Architecture
+Source Domain (mt.modul.tech)
+        │
+        │  export.ps1
+        ▼
+       CSV
+        │
+        │  import.ps1
+        ▼
+Target Domain (lab.modul.tech)
+
+The scripts:
+
+- Export user objects from a specific OU
+- Normalize missing CSV values
+- Recreate users in the target domain
+- Remap Distinguished Names (DN)
+- Restore manager attribute
+- Preserve selected custom attributes
+
+Permissions Required
+
+On Source Domain:
+
+Read access to users in specified OU
+Permission to run Get-ADUser
+
+On Target Domain:
+
+Permission to create users in target OU
+Permission to modify user attributes
+Permission to set manager attribute
+Domain Admin rights are not required on source domain.
+
+⚙️ Features
+
+Cross-domain user migration
+No trust required
+DN rewriting
+Manager attribute mapping
+Custom attribute support
+CSV normalization for empty fields
+Script-based (no GUI tools required)
+
+⚠️ Limitations
+
+Passwords are not migrated
+SIDHistory is not preserved
+Group membership is not included
+Not a replacement for ADMT
+Not real-time replication
+This is suitable for:
+Lab cloning
+Partial migrations
+Test environment population
+Controlled attribute replication
+
+🛠 Use Cases
+
+Creating a lab environment from production
+Isolated domain population
+Migration testing
+Staged domain rebuild
+Controlled cross-domain synchronization
+
+FILES
+
+(export.ps1)
+
+$all_users = Get-ADUser -Filter * -SearchBase "OU=mt_users, DC=mt,DC=modul,DC=tech" -Properties birthday, cn, city, company, department, displayName, givenName, hiredate, mail, mailNickname, manager, mobile, name, objectCategory, objectClass, telephoneNumber, title, userPrincipalName, workspace, distinguishedName
+$filter_property = $all_users | SELECT -ExcludeProperty ObjectGUID -Property *
+$filter_property | Export-CSV -Path Z:\ad.csv -Encoding UTF8
+
+(import.ps1)
+
+#Get-ADUser -Filter * -Properties * -SearchBase “ou=mt_users,dc=lab,dc=modul,dc=tech” | Remove-ADuser 
+$inputFile = "Z:\ad.csv"
+$outputFile = "Z:\adf.csv" 
+(Get-Content -Path $inputFile -Encoding UTF8) -replace ',,,', ',0,0,' -replace ',,', ',0,' | Set-Content -Path $outputFile -Encoding UTF8
+
+Import-CSV -Path "Z:\adf.csv"| ForEach-Object -process {New-ADuser -city $_.city -Company $_.Company -Department $_.Department -DisplayName $_.DisplayName -GivenName $_.GivenName -Mobile $_.Mobile -Name $_.Name -SamAccountName $_.SamAccountName -Surname $_.Surname -Title $_.Title -EmailAddress $_.EmailAddress -OtherAttributes @{'birthday'=$_.birthday; 'hiredate'=$_.hiredate; 'mailNickname'=$_.mailNickname; 'workspace'=$_.workspace; 'cn'=$_.cn; 'mail'=$_.mail; 'telephoneNumber'=$_.telephoneNumber } -ScriptPath $_.ScriptPath -Path ($_.DistinguishedName -replace '^CN=.*?,', '' -replace 'DC=mt', 'DC=lab') } 
+
+$users = Import-Csv -Path "Z:\adf.csv"
+
+foreach ($_ in $users) {
+    
+     $adds = @{
+        
+        manager = ($_.manager -replace 'DC=mt', 'DC=lab')
+        
+    }
+    Set-ADUser -Identity $_.sAMAccountName -Add $adds 
+}
